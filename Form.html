@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <title>Feedback</title>
+  <style>
+    label {	float: left;
+			width: 150px;}
+      #container{
+          width: 700px;
+          margin: auto;
+          background-color: beige;
+      } 
+      main{
+          padding: 50px;
+      }
+
+    /* Your existing CSS styles here */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 20px;
+    }
+
+    table, th, td {
+      border: 1px solid black;
+    }
+
+    th, td {
+      padding: 8px;
+      text-align: left;
+    }
+  </style>
+ </head>
+ <body>
+ <div id="container">
+	 
+	 <main>
+	 <h2>Feeback</h2>
+	 <h3>Love something? Hate something? Let us know!</h3>
+		 Note : Fields marked with an asterisk(*) are mandatory
+		 <br><br>
+		 <form method="post" novalidate>
+			<label>Title*:</label>
+			<input type="radio" name="title" id="miss" value="miss" required="required"/>Miss
+			<input type="radio" name="title" id="mr" value="mr" required="required"/>Mr.
+			<input type="radio" name="title" id="mrs" value="mrs" required="required"/>Mrs.
+			<br><br>
+
+			<div>
+			<label for="firstName">First Name*:</label>
+			<input type="text" name="firstName" id="firstName" placeholder="First Name" />	
+		    </div>
+			<br><br>
+			
+             <div>
+			<label for="lastName">Last Name*:</label>
+			<input type="text" name="lastName" id="lastName" placeholder="Last Name" />
+		   </div>
+			<br><br>
+			
+		    <div>
+			<label for="emailId">Email Id*:</label>
+			<input type="text" name="emailId" id="emailId" placeholder="yourname@domain.com" />
+		</div>
+			<br><br>
+			
+            <div>
+			<label for="phoneNumber">Phone Number*:</label>
+			<input type="text" name="phoneNumber" id="phoneNumber" placeholder="xxx-xxx-xxxx" />
+		</div>
+			<br><br>
+			
+			<div>
+            <label for="zipcode">ZipCode*:</label>
+			<input type="text" name="zipcode" id="zipcode" placeholder="xxxxxx" />
+		</div>
+			<br><br>
+             
+            <div>
+				<label for="zipcode">Street1*:</label>
+				<input type="text" name="Street1" id="Street1" placeholder="35-commonwealth" />
+			</div>
+			<br><br> 
+            <div>
+				<label for="zipcode">Street2:</label>
+				<input type="text" name="Street2" id="Street2" placeholder="brighton" />
+			</div>
+			<br><br> 
+             
+			<label for="comments">Comments*:</label>
+			<textarea name="comments" id="comments" placeholder="Your comments" rows="5" cols="25" required></textarea>
+			<br><br>
+
+		<label for="selectOption">Select an Option*:</label>
+            <select name="selectOption" id="selectOption"  required>
+				<option value="" disabled selected></option>
+				<option value="option1">Option 1</option>
+				<option value="option2">Option 2</option>
+				<option value="option3">Option 3</option>
+				<option value="option4">Option 4</option>
+				<option value="option5">Option 5</option>
+            </select>
+			<div id="checkboxContainer" required></div>
+			<div id="textFieldContainer"></div>
+			<input type="Submit"id="submitButton" disabled>
+			<input type="Reset">
+			<br><br>
+		 </form>
+
+
+	 </main>
+ </div>
+
+ <table>
+    <tbody id="tableBody"></tbody>
+  </table>
+ 
+	<script src="Form.js"></script>
+ </body>
+</html>
